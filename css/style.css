@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "ElektraText";
+  src: url(../fonts/electra/EtelkaText.otf);
+}
+
 html,
 body{
   margin: 0;
@@ -7,50 +12,88 @@ body{
   min-height: 100%;
   font-size: 14px;
   line-height: 22px;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
   position: relative;
 }
 .main-header{
   height: 153px;
-
   margin-bottom: 41px;
 }
 .container{
-  max-width: 900px;
+  max-width: 940px;
   margin: 0 auto;
   box-sizing: border-box;
   min-height: inherit;
   position: relative;
+  padding: 0 20px;
 }
 .title{
   font-size: 48px;
   padding-top: 40px;
   padding-bottom: 30px;
   margin: 0;
+  font-family: "ElektraText";
 }
-.nav{
-  padding-left: 10px;
-  background-color: #e5e5e5;
-  border-radius: 8px;
+
+@media only screen and (max-width: 518px){
+  .title{
+    font-size: 40px;
+  }
+}
+.menu-icon{
+  display: none;
+}
+@media only screen and (max-width: 518px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    cursor: pointer;
+  }
 }
 .main-menu{
   list-style: none;
-  padding: 13px 0;
+  padding: 9px 0;
+  margin: 0;
 }
-@media only screen and (max-width: 380px){
-  .nav-link{
-    display: none;
-  }
-}
+
 .list{
   display: inline-block;
   font-size: 14px;
+}
+.nav{
+  position: relative;
+  background-color: #e5e5e5;
+  border-radius: 8px;
+  height: 40px;
 }
 .nav-link{
   color: #000000;
   text-decoration: none;
   padding: 13px 15px;
- cursor: auto;
+  cursor: auto;
+  font-family: "ElektraText";
 }
+
+@media only screen and (max-width: 518px){
+  .main-menu{
+    display: none;
+    position: absolute;
+    background: #e5e5e5;
+    border-radius: 8px;
+  }
+
+  .main-menu li{
+    display: block;
+
+  }
+  .nav-link{
+    padding: 0;
+  }
+}
+
 .nav-link.activ{
   text-decoration: underline;
   text-decoration-color: #5a5a5a;
@@ -69,12 +112,9 @@ min-height: 418px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.for-foto{
- min-width: 280px;
-}
-.for-foto img{
-  max-width: 100%;
-}
+
+
+
 .sea-also{
   display: flex;
   flex-direction: column;
@@ -130,7 +170,13 @@ min-height: 418px;
 }
 .block-content:hover{
   color: #df4343;
-  border-bottom: 1px dashed #df4343;
+  border-bottom: 1px solid #df4343;
+}
+
+@media only screen and (max-width: 518px){
+  .for-foto img{
+    min-width: 380px;
+  }
 }
 
 .description{
@@ -158,17 +204,18 @@ min-height: 418px;
   top: 50%;
   left: 50%;
   margin-left: -190px;
-  margin-top: -243px;
+  margin-top: -295px;
   width: 380px;
-  min-height: 430px;
+  height: 430px;
   background-color: #ffffff;
   color: #000000;
   border-radius: 8px;
   box-shadow: 0 0 57px rgba(0,0,0,0.5);
 }
 .modal-content-close {
-    position: absolute;
-    top:75px;
+    position: relative;
+    top: 6px;
+    left: 340px;
     right: 90px;
     width: 22px;
     height: 22px;
@@ -181,8 +228,6 @@ min-height: 418px;
 .modal-content-close::after {
   content: "";
   position: absolute;
-  top: -55px;
-  left: 80px;
   width: 17px;
   height: 3px;
   background-color: #91999e;
@@ -195,15 +240,15 @@ min-height: 418px;
 .modal-content-close::after {
   transform: rotate(-45deg);
 }
-.modal-content p{
-  margin-top: 30px;
+.communications{
+  margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 40px;
   font-size: 30px;
-  font-weight: medium;
+  font-family: "ElektraText";
 }
 .modal-content .list-form{
-  margin-top: 35px;
+  margin-top: 28px;
   margin-bottom: 35px;
 }
 .modal-content label{
@@ -216,16 +261,14 @@ min-height: 418px;
   width: 300px;
   height: 30px;
   margin: 0;
-  margin-top: 9px;
   border: 1px solid #cccccc;
 }
 .text-pop{
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .message{
   width: 300px;
   height: 140px;
-  margin-top: 9px;
   border: 1px solid #cccccc;
   resize: none;
 }
@@ -241,10 +284,14 @@ min-height: 418px;
   background: linear-gradient(to top, #eb960c, #f5c22b);
   border-radius: 5px;
   box-shadow: 0px 1px 0px #a99047;
+  margin-top: 20px;
 }
 .btn:hover{
   background: linear-gradient(to bottom, #eb960c, #f5c22b);
 }
 .btn:error {
   border-color: #e74246;
+}
+.hidden{
+  display: none;
 }

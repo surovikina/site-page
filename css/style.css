@@ -75,6 +75,8 @@ body{
   padding: 13px 15px;
   cursor: auto;
   font-family: "ElektraText";
+  font-size: 14px;
+  line-height: 20px;
 }
 
 @media only screen and (max-width: 518px){
@@ -101,6 +103,7 @@ body{
 .nav-link:hover{
   text-decoration: underline;
   text-decoration-color: #5a5a5a;
+  line-height: 20px;
 }
 
 .content{
@@ -126,6 +129,7 @@ min-height: 418px;
 }
 .calendar{
   position: relative;
+  line-height: 16px;
 }
 .calendar:hover{
   color: #df4343;
@@ -145,6 +149,7 @@ min-height: 418px;
 }
 .email{
   position: relative;
+  line-height: 16px;
 }
 .email::before{
   content: "";

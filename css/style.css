@@ -1,0 +1,250 @@
+html,
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  position: relative;
+}
+.main-header{
+  height: 153px;
+
+  margin-bottom: 41px;
+}
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: inherit;
+  position: relative;
+}
+.title{
+  font-size: 48px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.nav{
+  padding-left: 10px;
+  background-color: #e5e5e5;
+  border-radius: 8px;
+}
+.main-menu{
+  list-style: none;
+  padding: 13px 0;
+}
+@media only screen and (max-width: 380px){
+  .nav-link{
+    display: none;
+  }
+}
+.list{
+  display: inline-block;
+  font-size: 14px;
+}
+.nav-link{
+  color: #000000;
+  text-decoration: none;
+  padding: 13px 15px;
+ cursor: auto;
+}
+.nav-link.activ{
+  text-decoration: underline;
+  text-decoration-color: #5a5a5a;
+}
+.nav-link:hover{
+  text-decoration: underline;
+  text-decoration-color: #5a5a5a;
+}
+
+.content{
+min-height: 418px;
+
+}
+.content .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.for-foto{
+ min-width: 280px;
+}
+.for-foto img{
+  max-width: 100%;
+}
+.sea-also{
+  display: flex;
+  flex-direction: column;
+}
+.see{
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 24px;
+}
+.calendar{
+  position: relative;
+}
+.calendar:hover{
+  color: #df4343;
+}
+.calendar::before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/calendar.png);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  top: 4px;
+  cursor: pointer;
+}
+.calendar:hover::before {
+  -webkit-filter: brightness(0);
+}
+.email{
+  position: relative;
+}
+.email::before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/email.png);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  top: 4px;
+  cursor: pointer;
+}
+
+.email:hover::before {
+  -webkit-filter: brightness(0);
+}
+.block-content{
+  margin-left: 25px;
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #0055a5;
+  text-decoration: none;
+  border-bottom: 1px dashed #0055a5;
+}
+.block-content:hover{
+  color: #df4343;
+  border-bottom: 1px dashed #df4343;
+}
+
+.description{
+  flex-basis: 590px;
+}
+.text{
+  margin: 0;
+  padding-bottom: 28px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer{
+  height: 120px;
+}
+.copyright{
+  background-color: #f2f2f2;
+  color: #666666;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 35px 25px;
+}
+.modal-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -190px;
+  margin-top: -243px;
+  width: 380px;
+  min-height: 430px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 0 57px rgba(0,0,0,0.5);
+}
+.modal-content-close {
+    position: absolute;
+    top:75px;
+    right: 90px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: -55px;
+  left: 80px;
+  width: 17px;
+  height: 3px;
+  background-color: #91999e;
+  border-radius: 1px;
+}
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+.modal-content p{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: medium;
+}
+.modal-content .list-form{
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.modal-content label{
+  font-size: 14px;
+}
+.list-form{
+  margin: 0 40px;
+}
+.list-form input[type="text"]{
+  width: 300px;
+  height: 30px;
+  margin: 0;
+  margin-top: 9px;
+  border: 1px solid #cccccc;
+}
+.text-pop{
+  margin-top: 30px;
+}
+.message{
+  width: 300px;
+  height: 140px;
+  margin-top: 9px;
+  border: 1px solid #cccccc;
+  resize: none;
+}
+.btn{
+  display: block;
+  border: none;
+  margin: 0 auto;
+  padding: 12px 25px;
+  color: #fff;
+  shadow: 0px 1px 0px #a99047;
+  font-size: 16px;
+  font-style: bold;
+  background: linear-gradient(to top, #eb960c, #f5c22b);
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px #a99047;
+}
+.btn:hover{
+  background: linear-gradient(to bottom, #eb960c, #f5c22b);
+}
+.btn:error {
+  border-color: #e74246;
+}

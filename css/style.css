@@ -16,11 +16,11 @@ body{
   font-weight: normal;
   position: relative;
 }
-.main-header{
+.main-header {
   height: 153px;
   margin-bottom: 41px;
 }
-.container{
+.container {
   max-width: 940px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -28,20 +28,19 @@ body{
   position: relative;
   padding: 0 20px;
 }
-.title{
+.title {
   font-size: 48px;
   padding-top: 40px;
   padding-bottom: 30px;
   margin: 0;
   font-family: "ElektraText";
 }
-
-@media only screen and (max-width: 518px){
+@media only screen and (max-width: 518px) {
   .title{
     font-size: 40px;
   }
 }
-.menu-icon{
+.menu-icon {
   display: none;
 }
 @media only screen and (max-width: 518px) {
@@ -53,23 +52,22 @@ body{
     cursor: pointer;
   }
 }
-.main-menu{
+.main-menu {
   list-style: none;
   padding: 9px 0;
   margin: 0;
 }
-
-.list{
+.list {
   display: inline-block;
   font-size: 14px;
 }
-.nav{
+.nav {
   position: relative;
   background-color: #e5e5e5;
   border-radius: 8px;
   height: 40px;
 }
-.nav-link{
+.nav-link {
   color: #000000;
   text-decoration: none;
   padding: 13px 15px;
@@ -78,44 +76,38 @@ body{
   font-size: 14px;
   line-height: 20px;
 }
-
-@media only screen and (max-width: 518px){
-  .main-menu{
+@media only screen and (max-width: 518px) {
+  .list{
     display: none;
-    position: absolute;
     background: #e5e5e5;
     border-radius: 8px;
   }
-
-  .main-menu li{
+  .list:nth-of-type(1) {
     display: block;
-
   }
-  .nav-link{
-    padding: 0;
+  .main-menu .nav-link {
+    display: block;
+    padding: 3px 22px;
   }
 }
-
-.nav-link.activ{
+.nav-link.activ {
   text-decoration: underline;
   text-decoration-color: #5a5a5a;
 }
-.nav-link:hover{
+.nav-link:hover {
   text-decoration: underline;
   text-decoration-color: #5a5a5a;
   line-height: 20px;
 }
-
-.content{
+.content {
 min-height: 418px;
-
 }
-.content .container{
+.content .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media only screen and (max-width: 908px){
+@media only screen and (max-width: 908px) {
   .for-foto{
     width: 100%;
   }
@@ -124,25 +116,23 @@ min-height: 418px;
     height: auto;
   }
 }
-
-
-.sea-also{
+.sea-also {
   display: flex;
   flex-direction: column;
 }
-.see{
+.see {
   margin: 0;
   margin-top: 38px;
   margin-bottom: 24px;
 }
-.calendar{
+.calendar {
   position: relative;
   line-height: 16px;
 }
-.calendar:hover{
+.calendar:hover {
   color: #df4343;
 }
-.calendar::before{
+.calendar::before {
   content: "";
   position: absolute;
   background-image: url(../img/calendar.png);
@@ -155,11 +145,11 @@ min-height: 418px;
 .calendar:hover::before {
   -webkit-filter: brightness(0);
 }
-.email{
+.email {
   position: relative;
   line-height: 16px;
 }
-.email::before{
+.email::before {
   content: "";
   position: absolute;
   background-image: url(../img/email.png);
@@ -169,11 +159,10 @@ min-height: 418px;
   top: 4px;
   cursor: pointer;
 }
-
 .email:hover::before {
   -webkit-filter: brightness(0);
 }
-.block-content{
+.block-content {
   margin-left: 25px;
   margin-bottom: 15px;
   display: inline-block;
@@ -181,33 +170,30 @@ min-height: 418px;
   text-decoration: none;
   border-bottom: 1px dashed #0055a5;
 }
-.block-content:hover{
+.block-content:hover {
   color: #df4343;
   border-bottom: 1px solid #df4343;
 }
-
-
-.description{
+.description {
   flex-basis: 590px;
 }
-.text{
+.text {
   margin: 0;
   padding-bottom: 28px;
   font-size: 14px;
   line-height: 22px;
 }
-
-.footer{
+.footer {
   height: 120px;
 }
-.copyright{
+.copyright {
   background-color: #f2f2f2;
   color: #666666;
   font-size: 12px;
   border-radius: 8px;
   padding: 35px 25px;
 }
-.modal-content{
+.modal-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -244,25 +230,24 @@ min-height: 418px;
 .modal-content-close::before {
   transform: rotate(45deg);
 }
-
 .modal-content-close::after {
   transform: rotate(-45deg);
 }
-.communications{
+.communications {
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 40px;
   font-size: 30px;
   font-family: "ElektraText";
 }
-.modal-content .list-form{
+.modal-content .list-form {
   margin-top: 28px;
   margin-bottom: 35px;
 }
-.modal-content label{
+.modal-content label {
   font-size: 14px;
 }
-.list-form{
+.list-form {
   margin: 0 40px;
 }
 .list-form input[type="text"]{
@@ -271,16 +256,16 @@ min-height: 418px;
   margin: 0;
   border: 1px solid #cccccc;
 }
-.text-pop{
+.text-pop {
   margin-top: 20px;
 }
-.message{
+.message {
   width: 300px;
   height: 140px;
   border: 1px solid #cccccc;
   resize: none;
 }
-.btn{
+.btn {
   display: block;
   border: none;
   margin: 0 auto;
@@ -294,12 +279,12 @@ min-height: 418px;
   box-shadow: 0px 1px 0px #a99047;
   margin-top: 20px;
 }
-.btn:hover{
+.btn:hover {
   background: linear-gradient(to bottom, #eb960c, #f5c22b);
 }
 .btn:error {
   border-color: #e74246;
 }
-.hidden{
+.hidden {
   display: none;
 }

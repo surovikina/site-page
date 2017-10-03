@@ -28,7 +28,7 @@ document.addEventListener('keydown', function (evt) {
 
 $(function(){
   $('.menu-icon').on('click', function(){
-    $('.main-menu').slideToggle(300, function(){
+    $('.list').slideToggle(0, function(){
       if($(this).css('display') === 'none'){
         $(this).removeAttr('style');
       }

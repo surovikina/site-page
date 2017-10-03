@@ -35,3 +35,12 @@ $(function(){
     });
   });
 });
+
+
+var seaAlso = document.querySelector('.sea-also');
+var description = document.querySelector('.description');
+
+if(window.matchMedia('(max-width: 908px)').matches)
+{
+	 seaAlso.parentNode.insertBefore(description, seaAlso);
+}

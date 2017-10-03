@@ -114,11 +114,13 @@ min-height: 418px;
   .content-foto{
     width: 100%;
     height: auto;
+    margin-bottom: 38px;
   }
 }
 .sea-also {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 .see {
   margin: 0;

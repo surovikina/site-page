@@ -186,11 +186,6 @@ min-height: 418px;
   border-bottom: 1px solid #df4343;
 }
 
-@media only screen and (max-width: 518px){
-  .for-foto img{
-    min-width: 380px;
-  }
-}
 
 .description{
   flex-basis: 590px;

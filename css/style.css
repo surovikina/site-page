@@ -115,7 +115,15 @@ min-height: 418px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+@media only screen and (max-width: 908px){
+  .for-foto{
+    width: 100%;
+  }
+  .content-foto{
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 .sea-also{
